@@ -1,0 +1,579 @@
+[
+  {
+    "id": "r001",
+    "name": "清蒸鸡胸肉",
+    "description": "低脂高蛋白，减脂期首选，做法简单营养丰富",
+    "difficulty": 1,
+    "cook_time": 25,
+    "calories": 150,
+    "protein": 28,
+    "fat": 3.5,
+    "carbs": 0,
+    "tags": ["清淡", "低脂", "高蛋白"],
+    "category": "肉类",
+    "ingredients": [
+      {"name": "鸡胸肉", "quantity": 200, "unit": "g", "category": "肉类"},
+      {"name": "料酒", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "生姜", "quantity": 10, "unit": "g", "category": "蔬菜"},
+      {"name": "小葱", "quantity": 10, "unit": "g", "category": "蔬菜"},
+      {"name": "生抽", "quantity": 5, "unit": "ml", "category": "调料"},
+      {"name": "盐", "quantity": 2, "unit": "g", "category": "调料"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "鸡胸肉洗净，用刀在表面划几刀便于入味"},
+      {"step_number": 2, "description": "加入料酒、姜片、少许盐，腌制15分钟"},
+      {"step_number": 3, "description": "水烧开后放入蒸锅，大火蒸15分钟"},
+      {"step_number": 4, "description": "取出切片，淋上生抽，撒上葱花即可"}
+    ]
+  },
+  {
+    "id": "r002",
+    "name": "番茄炒蛋",
+    "description": "经典家常菜，酸甜可口，老少皆宜",
+    "difficulty": 1,
+    "cook_time": 15,
+    "calories": 180,
+    "protein": 12,
+    "fat": 10,
+    "carbs": 12,
+    "tags": ["家常", "酸甜", "快手菜"],
+    "category": "蛋类",
+    "ingredients": [
+      {"name": "鸡蛋", "quantity": 3, "unit": "个", "category": "蛋类"},
+      {"name": "番茄", "quantity": 2, "unit": "个", "category": "蔬菜"},
+      {"name": "食用油", "quantity": 15, "unit": "ml", "category": "调料"},
+      {"name": "盐", "quantity": 3, "unit": "g", "category": "调料"},
+      {"name": "白糖", "quantity": 5, "unit": "g", "category": "调料"},
+      {"name": "小葱", "quantity": 5, "unit": "g", "category": "蔬菜"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "番茄洗净切块，鸡蛋打散加少许盐搅匀"},
+      {"step_number": 2, "description": "热锅凉油，倒入蛋液炒至凝固盛出备用"},
+      {"step_number": 3, "description": "锅中加油，放入番茄翻炒出汁"},
+      {"step_number": 4, "description": "加入白糖、盐调味，倒入鸡蛋翻炒均匀，撒葱花出锅"}
+    ]
+  },
+  {
+    "id": "r003",
+    "name": "蒜蓉西兰花",
+    "description": "高纤维低热量，减脂必备蔬菜",
+    "difficulty": 1,
+    "cook_time": 10,
+    "calories": 65,
+    "protein": 4,
+    "fat": 3,
+    "carbs": 6,
+    "tags": ["清淡", "低脂", "素菜"],
+    "category": "蔬菜",
+    "ingredients": [
+      {"name": "西兰花", "quantity": 300, "unit": "g", "category": "蔬菜"},
+      {"name": "大蒜", "quantity": 20, "unit": "g", "category": "蔬菜"},
+      {"name": "食用油", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "盐", "quantity": 2, "unit": "g", "category": "调料"},
+      {"name": "蚝油", "quantity": 5, "unit": "ml", "category": "调料"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "西兰花掰成小朵，洗净焯水1分钟捞出"},
+      {"step_number": 2, "description": "大蒜切末备用"},
+      {"step_number": 3, "description": "热锅加油，爆香蒜末"},
+      {"step_number": 4, "description": "放入西兰花翻炒，加盐和蚝油调味即可"}
+    ]
+  },
+  {
+    "id": "r004",
+    "name": "红烧排骨",
+    "description": "色泽红亮，肉质软烂，经典下饭菜",
+    "difficulty": 3,
+    "cook_time": 60,
+    "calories": 380,
+    "protein": 22,
+    "fat": 25,
+    "carbs": 15,
+    "tags": ["红烧", "肉类", "家常"],
+    "category": "肉类",
+    "ingredients": [
+      {"name": "猪小排", "quantity": 500, "unit": "g", "category": "肉类"},
+      {"name": "生姜", "quantity": 15, "unit": "g", "category": "蔬菜"},
+      {"name": "大葱", "quantity": 20, "unit": "g", "category": "蔬菜"},
+      {"name": "八角", "quantity": 2, "unit": "个", "category": "调料"},
+      {"name": "桂皮", "quantity": 5, "unit": "g", "category": "调料"},
+      {"name": "生抽", "quantity": 30, "unit": "ml", "category": "调料"},
+      {"name": "老抽", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "冰糖", "quantity": 20, "unit": "g", "category": "调料"},
+      {"name": "料酒", "quantity": 20, "unit": "ml", "category": "调料"},
+      {"name": "食用油", "quantity": 15, "unit": "ml", "category": "调料"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "排骨冷水下锅焯水，撇去浮沫后捞出洗净"},
+      {"step_number": 2, "description": "锅中加油，放入冰糖小火炒至焦糖色"},
+      {"step_number": 3, "description": "放入排骨翻炒上色，加入姜片、葱段、八角、桂皮"},
+      {"step_number": 4, "description": "加入料酒、生抽、老抽翻炒均匀"},
+      {"step_number": 5, "description": "加入没过排骨的热水，大火烧开后转小火炖45分钟"},
+      {"step_number": 6, "description": "大火收汁至浓稠即可"}
+    ]
+  },
+  {
+    "id": "r005",
+    "name": "清炒时蔬",
+    "description": "简单快手，保留蔬菜原汁原味",
+    "difficulty": 1,
+    "cook_time": 8,
+    "calories": 45,
+    "protein": 2,
+    "fat": 2.5,
+    "carbs": 4,
+    "tags": ["清淡", "素菜", "快手菜"],
+    "category": "蔬菜",
+    "ingredients": [
+      {"name": "时令蔬菜", "quantity": 300, "unit": "g", "category": "蔬菜"},
+      {"name": "大蒜", "quantity": 10, "unit": "g", "category": "蔬菜"},
+      {"name": "食用油", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "盐", "quantity": 2, "unit": "g", "category": "调料"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "蔬菜洗净切段，大蒜切末"},
+      {"step_number": 2, "description": "热锅加油，爆香蒜末"},
+      {"step_number": 3, "description": "放入蔬菜大火翻炒至断生"},
+      {"step_number": 4, "description": "加盐调味，翻炒均匀即可出锅"}
+    ]
+  },
+  {
+    "id": "r006",
+    "name": "酸辣土豆丝",
+    "description": "酸辣开胃，下饭神器",
+    "difficulty": 2,
+    "cook_time": 15,
+    "calories": 120,
+    "protein": 3,
+    "fat": 5,
+    "carbs": 18,
+    "tags": ["酸辣", "素菜", "家常"],
+    "category": "蔬菜",
+    "ingredients": [
+      {"name": "土豆", "quantity": 300, "unit": "g", "category": "蔬菜"},
+      {"name": "干辣椒", "quantity": 5, "unit": "个", "category": "调料"},
+      {"name": "花椒", "quantity": 10, "unit": "粒", "category": "调料"},
+      {"name": "大蒜", "quantity": 10, "unit": "g", "category": "蔬菜"},
+      {"name": "白醋", "quantity": 15, "unit": "ml", "category": "调料"},
+      {"name": "食用油", "quantity": 15, "unit": "ml", "category": "调料"},
+      {"name": "盐", "quantity": 3, "unit": "g", "category": "调料"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "土豆去皮切丝，泡水去除淀粉"},
+      {"step_number": 2, "description": "热锅加油，放入花椒和干辣椒爆香"},
+      {"step_number": 3, "description": "捞出土豆丝沥干水分，放入锅中大火翻炒"},
+      {"step_number": 4, "description": "加入白醋和盐，翻炒至断生即可"}
+    ]
+  },
+  {
+    "id": "r007",
+    "name": "虾仁滑蛋",
+    "description": "鲜嫩爽滑，高蛋白低脂肪",
+    "difficulty": 2,
+    "cook_time": 15,
+    "calories": 160,
+    "protein": 22,
+    "fat": 8,
+    "carbs": 3,
+    "tags": ["清淡", "高蛋白", "低脂"],
+    "category": "海鲜",
+    "ingredients": [
+      {"name": "虾仁", "quantity": 150, "unit": "g", "category": "海鲜"},
+      {"name": "鸡蛋", "quantity": 3, "unit": "个", "category": "蛋类"},
+      {"name": "料酒", "quantity": 5, "unit": "ml", "category": "调料"},
+      {"name": "淀粉", "quantity": 5, "unit": "g", "category": "调料"},
+      {"name": "盐", "quantity": 2, "unit": "g", "category": "调料"},
+      {"name": "食用油", "quantity": 15, "unit": "ml", "category": "调料"},
+      {"name": "小葱", "quantity": 5, "unit": "g", "category": "蔬菜"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "虾仁去虾线，加料酒和淀粉腌制10分钟"},
+      {"step_number": 2, "description": "鸡蛋打散，加少许盐和料酒搅匀"},
+      {"step_number": 3, "description": "热锅加油，放入虾仁快速翻炒至变色"},
+      {"step_number": 4, "description": "倒入蛋液，轻轻翻炒至蛋液凝固，撒葱花出锅"}
+    ]
+  },
+  {
+    "id": "r008",
+    "name": "凉拌黄瓜",
+    "description": "清脆爽口，开胃小菜",
+    "difficulty": 1,
+    "cook_time": 5,
+    "calories": 35,
+    "protein": 1,
+    "fat": 1,
+    "carbs": 5,
+    "tags": ["凉菜", "低脂", "快手菜"],
+    "category": "蔬菜",
+    "ingredients": [
+      {"name": "黄瓜", "quantity": 2, "unit": "根", "category": "蔬菜"},
+      {"name": "大蒜", "quantity": 10, "unit": "g", "category": "蔬菜"},
+      {"name": "生抽", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "香醋", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "香油", "quantity": 5, "unit": "ml", "category": "调料"},
+      {"name": "白糖", "quantity": 3, "unit": "g", "category": "调料"},
+      {"name": "盐", "quantity": 2, "unit": "g", "category": "调料"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "黄瓜洗净拍碎，切成小段"},
+      {"step_number": 2, "description": "大蒜切末"},
+      {"step_number": 3, "description": "加入生抽、香醋、香油、白糖、盐、蒜末拌匀"},
+      {"step_number": 4, "description": "放入冰箱冷藏10分钟后食用更佳"}
+    ]
+  },
+  {
+    "id": "r009",
+    "name": "紫菜蛋花汤",
+    "description": "清淡鲜美，快手汤品",
+    "difficulty": 1,
+    "cook_time": 8,
+    "calories": 55,
+    "protein": 4,
+    "fat": 2,
+    "carbs": 4,
+    "tags": ["汤品", "清淡", "快手菜"],
+    "category": "汤品",
+    "ingredients": [
+      {"name": "紫菜", "quantity": 10, "unit": "g", "category": "干货"},
+      {"name": "鸡蛋", "quantity": 1, "unit": "个", "category": "蛋类"},
+      {"name": "小葱", "quantity": 5, "unit": "g", "category": "蔬菜"},
+      {"name": "盐", "quantity": 2, "unit": "g", "category": "调料"},
+      {"name": "香油", "quantity": 3, "unit": "ml", "category": "调料"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "紫菜撕碎放入碗中，鸡蛋打散备用"},
+      {"step_number": 2, "description": "锅中烧开水，放入紫菜煮1分钟"},
+      {"step_number": 3, "description": "慢慢倒入蛋液，形成蛋花"},
+      {"step_number": 4, "description": "加盐调味，淋上香油，撒上葱花即可"}
+    ]
+  },
+  {
+    "id": "r010",
+    "name": "蒸蛋羹",
+    "description": "嫩滑如豆腐，老少皆宜的营养菜品",
+    "difficulty": 2,
+    "cook_time": 20,
+    "calories": 110,
+    "protein": 9,
+    "fat": 7,
+    "carbs": 3,
+    "tags": ["清淡", "蒸菜", "嫩滑"],
+    "category": "蛋类",
+    "ingredients": [
+      {"name": "鸡蛋", "quantity": 2, "unit": "个", "category": "蛋类"},
+      {"name": "温水", "quantity": 200, "unit": "ml", "category": "其他"},
+      {"name": "盐", "quantity": 2, "unit": "g", "category": "调料"},
+      {"name": "生抽", "quantity": 5, "unit": "ml", "category": "调料"},
+      {"name": "香油", "quantity": 3, "unit": "ml", "category": "调料"},
+      {"name": "小葱", "quantity": 5, "unit": "g", "category": "蔬菜"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "鸡蛋打散，加入温水（1:1.5比例）和盐搅匀"},
+      {"step_number": 2, "description": "过筛去除气泡，倒入蒸碗中"},
+      {"step_number": 3, "description": "盖上保鲜膜，用牙签扎几个小孔"},
+      {"step_number": 4, "description": "水开后放入蒸锅，中小火蒸12分钟"},
+      {"step_number": 5, "description": "取出淋上生抽和香油，撒上葱花即可"}
+    ]
+  },
+  {
+    "id": "r011",
+    "name": "宫保鸡丁",
+    "description": "麻辣鲜香，经典川菜",
+    "difficulty": 3,
+    "cook_time": 25,
+    "calories": 280,
+    "protein": 20,
+    "fat": 16,
+    "carbs": 14,
+    "tags": ["麻辣", "家常", "川菜"],
+    "category": "肉类",
+    "ingredients": [
+      {"name": "鸡胸肉", "quantity": 200, "unit": "g", "category": "肉类"},
+      {"name": "花生米", "quantity": 50, "unit": "g", "category": "干货"},
+      {"name": "干辣椒", "quantity": 8, "unit": "个", "category": "调料"},
+      {"name": "花椒", "quantity": 10, "unit": "粒", "category": "调料"},
+      {"name": "大葱", "quantity": 30, "unit": "g", "category": "蔬菜"},
+      {"name": "大蒜", "quantity": 10, "unit": "g", "category": "蔬菜"},
+      {"name": "生姜", "quantity": 10, "unit": "g", "category": "蔬菜"},
+      {"name": "料酒", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "生抽", "quantity": 15, "unit": "ml", "category": "调料"},
+      {"name": "醋", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "白糖", "quantity": 10, "unit": "g", "category": "调料"},
+      {"name": "淀粉", "quantity": 10, "unit": "g", "category": "调料"},
+      {"name": "食用油", "quantity": 20, "unit": "ml", "category": "调料"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "鸡胸肉切丁，加料酒、淀粉腌制10分钟"},
+      {"step_number": 2, "description": "调碗汁：生抽、醋、白糖、淀粉、水拌匀"},
+      {"step_number": 3, "description": "花生米炸至金黄捞出"},
+      {"step_number": 4, "description": "锅中加油，放干辣椒和花椒爆香"},
+      {"step_number": 5, "description": "放入鸡丁快速翻炒至变色"},
+      {"step_number": 6, "description": "加入葱姜蒜翻炒，倒入碗汁翻炒均匀"},
+      {"step_number": 7, "description": "放入花生米翻炒几下即可出锅"}
+    ]
+  },
+  {
+    "id": "r012",
+    "name": "清炒虾仁",
+    "description": "鲜嫩弹牙，高蛋白低脂",
+    "difficulty": 2,
+    "cook_time": 12,
+    "calories": 120,
+    "protein": 22,
+    "fat": 3,
+    "carbs": 2,
+    "tags": ["清淡", "高蛋白", "海鲜"],
+    "category": "海鲜",
+    "ingredients": [
+      {"name": "虾仁", "quantity": 200, "unit": "g", "category": "海鲜"},
+      {"name": "料酒", "quantity": 5, "unit": "ml", "category": "调料"},
+      {"name": "淀粉", "quantity": 5, "unit": "g", "category": "调料"},
+      {"name": "盐", "quantity": 2, "unit": "g", "category": "调料"},
+      {"name": "食用油", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "小葱", "quantity": 5, "unit": "g", "category": "蔬菜"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "虾仁去虾线，加料酒和淀粉腌制10分钟"},
+      {"step_number": 2, "description": "热锅加油，放入虾仁快速翻炒"},
+      {"step_number": 3, "description": "虾仁变色后加盐调味"},
+      {"step_number": 4, "description": "撒上葱花，翻炒均匀即可出锅"}
+    ]
+  },
+  {
+    "id": "r013",
+    "name": "玉米排骨汤",
+    "description": "清甜滋补，营养丰富",
+    "difficulty": 2,
+    "cook_time": 90,
+    "calories": 220,
+    "protein": 18,
+    "fat": 12,
+    "carbs": 12,
+    "tags": ["汤品", "滋补", "清淡"],
+    "category": "汤品",
+    "ingredients": [
+      {"name": "猪小排", "quantity": 300, "unit": "g", "category": "肉类"},
+      {"name": "玉米", "quantity": 1, "unit": "根", "category": "蔬菜"},
+      {"name": "胡萝卜", "quantity": 1, "unit": "根", "category": "蔬菜"},
+      {"name": "生姜", "quantity": 10, "unit": "g", "category": "蔬菜"},
+      {"name": "料酒", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "盐", "quantity": 3, "unit": "g", "category": "调料"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "排骨冷水下锅焯水，撇去浮沫后捞出"},
+      {"step_number": 2, "description": "玉米切段，胡萝卜切块"},
+      {"step_number": 3, "description": "砂锅中放入排骨、玉米、胡萝卜、姜片"},
+      {"step_number": 4, "description": "加入足量热水和料酒，大火烧开后转小火炖1小时"},
+      {"step_number": 5, "description": "加盐调味，继续炖10分钟即可"}
+    ]
+  },
+  {
+    "id": "r014",
+    "name": "麻婆豆腐",
+    "description": "麻辣鲜香，嫩滑可口",
+    "difficulty": 2,
+    "cook_time": 20,
+    "calories": 200,
+    "protein": 14,
+    "fat": 13,
+    "carbs": 8,
+    "tags": ["麻辣", "家常", "川菜"],
+    "category": "豆制品",
+    "ingredients": [
+      {"name": "嫩豆腐", "quantity": 300, "unit": "g", "category": "豆制品"},
+      {"name": "猪肉末", "quantity": 50, "unit": "g", "category": "肉类"},
+      {"name": "豆瓣酱", "quantity": 15, "unit": "g", "category": "调料"},
+      {"name": "花椒粉", "quantity": 3, "unit": "g", "category": "调料"},
+      {"name": "大蒜", "quantity": 10, "unit": "g", "category": "蔬菜"},
+      {"name": "生姜", "quantity": 5, "unit": "g", "category": "蔬菜"},
+      {"name": "小葱", "quantity": 5, "unit": "g", "category": "蔬菜"},
+      {"name": "淀粉", "quantity": 5, "unit": "g", "category": "调料"},
+      {"name": "食用油", "quantity": 15, "unit": "ml", "category": "调料"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "豆腐切小块，放入加了盐的开水中焯水2分钟"},
+      {"step_number": 2, "description": "热锅加油，放入肉末炒至变色"},
+      {"step_number": 3, "description": "加入豆瓣酱、姜末、蒜末炒出红油"},
+      {"step_number": 4, "description": "加入适量水烧开，放入豆腐轻轻翻动"},
+      {"step_number": 5, "description": "用水淀粉勾芡，撒上花椒粉和葱花即可"}
+    ]
+  },
+  {
+    "id": "r015",
+    "name": "西芹百合",
+    "description": "清淡爽口，营养丰富",
+    "difficulty": 1,
+    "cook_time": 10,
+    "calories": 60,
+    "protein": 2,
+    "fat": 2,
+    "carbs": 8,
+    "tags": ["清淡", "素菜", "快手菜"],
+    "category": "蔬菜",
+    "ingredients": [
+      {"name": "西芹", "quantity": 200, "unit": "g", "category": "蔬菜"},
+      {"name": "鲜百合", "quantity": 100, "unit": "g", "category": "蔬菜"},
+      {"name": "枸杞", "quantity": 5, "unit": "g", "category": "干货"},
+      {"name": "盐", "quantity": 2, "unit": "g", "category": "调料"},
+      {"name": "食用油", "quantity": 10, "unit": "ml", "category": "调料"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "西芹去筋切段，百合掰开洗净，枸杞泡软"},
+      {"step_number": 2, "description": "热锅加油，放入西芹翻炒1分钟"},
+      {"step_number": 3, "description": "加入百合和枸杞快速翻炒"},
+      {"step_number": 4, "description": "加盐调味，翻炒均匀即可出锅"}
+    ]
+  },
+  {
+    "id": "r016",
+    "name": "鱼香肉丝",
+    "description": "酸甜微辣，经典家常菜",
+    "difficulty": 3,
+    "cook_time": 20,
+    "calories": 250,
+    "protein": 18,
+    "fat": 14,
+    "carbs": 12,
+    "tags": ["酸甜", "家常", "川菜"],
+    "category": "肉类",
+    "ingredients": [
+      {"name": "猪里脊", "quantity": 200, "unit": "g", "category": "肉类"},
+      {"name": "木耳", "quantity": 50, "unit": "g", "category": "干货"},
+      {"name": "胡萝卜", "quantity": 50, "unit": "g", "category": "蔬菜"},
+      {"name": "青椒", "quantity": 50, "unit": "g", "category": "蔬菜"},
+      {"name": "泡椒", "quantity": 3, "unit": "个", "category": "调料"},
+      {"name": "大蒜", "quantity": 10, "unit": "g", "category": "蔬菜"},
+      {"name": "生姜", "quantity": 10, "unit": "g", "category": "蔬菜"},
+      {"name": "醋", "quantity": 15, "unit": "ml", "category": "调料"},
+      {"name": "白糖", "quantity": 10, "unit": "g", "category": "调料"},
+      {"name": "生抽", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "料酒", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "淀粉", "quantity": 10, "unit": "g", "category": "调料"},
+      {"name": "食用油", "quantity": 20, "unit": "ml", "category": "调料"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "猪里脊切丝，加料酒和淀粉腌制"},
+      {"step_number": 2, "description": "木耳、胡萝卜、青椒切丝"},
+      {"step_number": 3, "description": "调鱼香汁：醋、糖、生抽、淀粉、水拌匀"},
+      {"step_number": 4, "description": "热锅加油，放入肉丝滑炒至变色盛出"},
+      {"step_number": 5, "description": "锅中加油，放泡椒、姜蒜末炒香"},
+      {"step_number": 6, "description": "放入蔬菜丝翻炒，倒入肉丝"},
+      {"step_number": 7, "description": "倒入鱼香汁翻炒均匀即可"}
+    ]
+  },
+  {
+    "id": "r017",
+    "name": "白灼生菜",
+    "description": "清淡健康，保留蔬菜原味",
+    "difficulty": 1,
+    "cook_time": 5,
+    "calories": 30,
+    "protein": 1,
+    "fat": 1,
+    "carbs": 3,
+    "tags": ["清淡", "素菜", "快手菜"],
+    "category": "蔬菜",
+    "ingredients": [
+      {"name": "生菜", "quantity": 300, "unit": "g", "category": "蔬菜"},
+      {"name": "大蒜", "quantity": 10, "unit": "g", "category": "蔬菜"},
+      {"name": "生抽", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "蚝油", "quantity": 5, "unit": "ml", "category": "调料"},
+      {"name": "食用油", "quantity": 5, "unit": "ml", "category": "调料"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "生菜洗净，大蒜切末"},
+      {"step_number": 2, "description": "烧开水，放入生菜焯水30秒捞出摆盘"},
+      {"step_number": 3, "description": "淋上生抽和蚝油"},
+      {"step_number": 4, "description": "热油爆香蒜末，淋在生菜上即可"}
+    ]
+  },
+  {
+    "id": "r018",
+    "name": "糖醋里脊",
+    "description": "酸甜酥脆，大人小孩都爱",
+    "difficulty": 3,
+    "cook_time": 30,
+    "calories": 320,
+    "protein": 18,
+    "fat": 18,
+    "carbs": 22,
+    "tags": ["酸甜", "家常", "炸"],
+    "category": "肉类",
+    "ingredients": [
+      {"name": "猪里脊", "quantity": 250, "unit": "g", "category": "肉类"},
+      {"name": "鸡蛋", "quantity": 1, "unit": "个", "category": "蛋类"},
+      {"name": "淀粉", "quantity": 50, "unit": "g", "category": "调料"},
+      {"name": "面粉", "quantity": 20, "unit": "g", "category": "调料"},
+      {"name": "番茄酱", "quantity": 30, "unit": "g", "category": "调料"},
+      {"name": "白醋", "quantity": 15, "unit": "ml", "category": "调料"},
+      {"name": "白糖", "quantity": 30, "unit": "g", "category": "调料"},
+      {"name": "食用油", "quantity": 50, "unit": "ml", "category": "调料"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "猪里脊切条，加盐和料酒腌制10分钟"},
+      {"step_number": 2, "description": "鸡蛋、淀粉、面粉调成糊，裹上肉条"},
+      {"step_number": 3, "description": "油温6成热，放入肉条炸至金黄捞出"},
+      {"step_number": 4, "description": "油温升高，复炸一次至酥脆"},
+      {"step_number": 5, "description": "锅中放番茄酱、白醋、白糖、少许水烧开"},
+      {"step_number": 6, "description": "放入炸好的里脊快速翻炒挂汁即可"}
+    ]
+  },
+  {
+    "id": "r019",
+    "name": "冬瓜排骨汤",
+    "description": "清热利尿，适合夏天饮用",
+    "difficulty": 2,
+    "cook_time": 60,
+    "calories": 180,
+    "protein": 15,
+    "fat": 8,
+    "carbs": 8,
+    "tags": ["汤品", "清淡", "滋补"],
+    "category": "汤品",
+    "ingredients": [
+      {"name": "猪小排", "quantity": 300, "unit": "g", "category": "肉类"},
+      {"name": "冬瓜", "quantity": 300, "unit": "g", "category": "蔬菜"},
+      {"name": "生姜", "quantity": 10, "unit": "g", "category": "蔬菜"},
+      {"name": "料酒", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "盐", "quantity": 3, "unit": "g", "category": "调料"},
+      {"name": "枸杞", "quantity": 5, "unit": "g", "category": "干货"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "排骨冷水下锅焯水后捞出洗净"},
+      {"step_number": 2, "description": "冬瓜去皮切块"},
+      {"step_number": 3, "description": "砂锅中放入排骨和姜片，加足量热水"},
+      {"step_number": 4, "description": "大火烧开后转小火炖40分钟"},
+      {"step_number": 5, "description": "加入冬瓜继续炖15分钟"},
+      {"step_number": 6, "description": "加盐和枸杞，炖5分钟即可"}
+    ]
+  },
+  {
+    "id": "r020",
+    "name": "蒜蓉粉丝蒸虾",
+    "description": "鲜美可口，宴客佳品",
+    "difficulty": 2,
+    "cook_time": 20,
+    "calories": 160,
+    "protein": 20,
+    "fat": 4,
+    "carbs": 12,
+    "tags": ["蒸菜", "海鲜", "清淡"],
+    "category": "海鲜",
+    "ingredients": [
+      {"name": "大虾", "quantity": 8, "unit": "只", "category": "海鲜"},
+      {"name": "粉丝", "quantity": 50, "unit": "g", "category": "干货"},
+      {"name": "大蒜", "quantity": 30, "unit": "g", "category": "蔬菜"},
+      {"name": "生抽", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "料酒", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "食用油", "quantity": 10, "unit": "ml", "category": "调料"},
+      {"name": "小葱", "quantity": 5, "unit": "g", "category": "蔬菜"}
+    ],
+    "steps": [
+      {"step_number": 1, "description": "粉丝泡软铺在盘底，大虾开背去虾线"},
+      {"step_number": 2, "description": "虾摆在粉丝上，淋上料酒"},
+      {"step_number": 3, "description": "蒜末用油炒至金黄，加生抽拌匀"},
+      {"step_number": 4, "description": "将蒜蓉浇在虾上"},
+      {"step_number": 5, "description": "水开后蒸8分钟，撒上葱花即可"}
+    ]
+  }
+]
