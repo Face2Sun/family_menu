@@ -11,6 +11,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        persist-credentials: false
     
     - name: Set up Flutter
       uses: subosito/flutter-action@v2
@@ -18,8 +20,14 @@ jobs:
         flutter-version: '3.22.x'
         channel: 'stable'
     
+    - name: Print Flutter version
+      run: flutter --version
+    
     - name: Install dependencies
       run: flutter pub get
+    
+    - name: Analyze code
+      run: flutter analyze
     
     - name: Build web application
       run: flutter build web --release --base-href="/family_menu/"
@@ -27,5 +35,6 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
         publish_dir: build/web
+        publish_branch: gh-pages
