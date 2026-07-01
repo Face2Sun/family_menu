@@ -158,6 +158,7 @@ class _CategorySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final categoryName = _getCategoryName(category);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -172,7 +173,7 @@ class _CategorySection extends StatelessWidget {
               ),
               const SizedBox(width: 6),
               Text(
-                category,
+                categoryName,
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   fontSize: 14,
@@ -194,8 +195,38 @@ class _CategorySection extends StatelessWidget {
     );
   }
 
-  String _getCategoryIcon(String category) {
+  String _getCategoryName(String category) {
     switch (category) {
+      case 'meat':
+        return '肉类';
+      case 'vegetable':
+        return '蔬菜';
+      case 'seafood':
+        return '海鲜';
+      case 'egg':
+        return '蛋类';
+      case 'seasoning':
+        return '调料';
+      case 'dried':
+        return '干货';
+      case 'tofu':
+        return '豆制品';
+      case 'soup':
+        return '汤品';
+      case 'rice':
+        return '主食';
+      case 'dessert':
+        return '甜品';
+      case 'other':
+        return '其他';
+      default:
+        return category;
+    }
+  }
+
+  String _getCategoryIcon(String category) {
+    final categoryName = _getCategoryName(category);
+    switch (categoryName) {
       case '肉类':
         return '🥩';
       case '蔬菜':
@@ -210,6 +241,12 @@ class _CategorySection extends StatelessWidget {
         return '🍄';
       case '豆制品':
         return '🧊';
+      case '汤品':
+        return '🍲';
+      case '主食':
+        return '🍚';
+      case '甜品':
+        return '🍰';
       default:
         return '📦';
     }

@@ -31,7 +31,7 @@ class RecipeService {
     return recipes.where((r) {
       return r.name.toLowerCase().contains(lowerKeyword) ||
           r.description.toLowerCase().contains(lowerKeyword) ||
-          r.tags.any((tag) => tag.toLowerCase().contains(lowerKeyword)) ||
+          r.tagIds.any((tag) => tag.toLowerCase().contains(lowerKeyword)) ||
           r.ingredients.any(
               (i) => i.name.toLowerCase().contains(lowerKeyword));
     }).toList();
@@ -39,19 +39,19 @@ class RecipeService {
 
   Future<List<Recipe>> getRecipesByCategory(String category) async {
     final recipes = await getAllRecipes();
-    return recipes.where((r) => r.category == category).toList();
+    return recipes.where((r) => r.categoryId == category).toList();
   }
 
   Future<List<Recipe>> getRecipesByTags(List<String> tags) async {
     final recipes = await getAllRecipes();
     return recipes.where((r) {
-      return tags.any((tag) => r.tags.contains(tag));
+      return tags.any((tag) => r.tagIds.contains(tag));
     }).toList();
   }
 
   Future<List<String>> getAllCategories() async {
     final recipes = await getAllRecipes();
-    final categories = recipes.map((r) => r.category).toSet().toList();
+    final categories = recipes.map((r) => r.categoryId).toSet().toList();
     categories.sort();
     return categories;
   }
@@ -65,8 +65,8 @@ class RecipeService {
     List<String> excludeTags = const [],
   }) {
     var candidates = allRecipes.where((r) {
-      if (excludeTags.any((t) => r.tags.contains(t))) return false;
-      if (tags.isNotEmpty && !tags.any((t) => r.tags.contains(t))) {
+      if (excludeTags.any((t) => r.tagIds.contains(t))) return false;
+      if (tags.isNotEmpty && !tags.any((t) => r.tagIds.contains(t))) {
         return false;
       }
       return true;
@@ -79,7 +79,7 @@ class RecipeService {
     final List<Recipe> soups = [];
 
     for (final r in candidates) {
-      if (r.category == '汤品') {
+      if (r.categoryId == 'soup') {
         soups.add(r);
       } else {
         dishes.add(r);

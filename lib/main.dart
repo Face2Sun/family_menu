@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'providers/menu_provider.dart';
 import 'providers/shopping_provider.dart';
-import 'screens/home/home_screen.dart';
+import 'screens/main_tab_screen.dart';
+import 'screens/recipe/recipe_detail_screen.dart';
+import 'screens/shopping/shopping_list_screen.dart';
+import 'models/recipe.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,7 +43,21 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        home: const HomeScreen(),
+        home: const MainTabScreen(),
+        onGenerateRoute: (settings) {
+          if (settings.name == '/recipe/detail') {
+            final recipe = settings.arguments as Recipe;
+            return MaterialPageRoute(
+              builder: (context) => RecipeDetailScreen(recipe: recipe),
+            );
+          }
+          if (settings.name == '/shopping') {
+            return MaterialPageRoute(
+              builder: (context) => const ShoppingListScreen(),
+            );
+          }
+          return null;
+        },
       ),
     );
   }
