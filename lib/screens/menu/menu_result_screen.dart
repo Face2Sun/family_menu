@@ -215,14 +215,14 @@ class _RecipeRow extends StatelessWidget {
                 width: 36,
                 height: 36,
                 decoration: BoxDecoration(
-                  color: recipe.category == '汤品'
+                  color: recipe.categoryId == 'soup'
                       ? Colors.blue.withOpacity(0.1)
                       : Colors.green.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Center(
                   child: Text(
-                    recipe.category == '汤品' ? '🍲' : '🍳',
+                    recipe.categoryIcon,
                     style: const TextStyle(fontSize: 18),
                   ),
                 ),
@@ -240,7 +240,7 @@ class _RecipeRow extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      recipe.tags.take(2).join(' · '),
+                      recipe.tagNames.take(2).join(' · '),
                       style: TextStyle(
                         fontSize: 11,
                         color: theme.colorScheme.onSurfaceVariant,

@@ -160,14 +160,14 @@ class _SearchResultTile extends StatelessWidget {
           width: 44,
           height: 44,
           decoration: BoxDecoration(
-            color: recipe.category == '汤品'
+            color: recipe.categoryId == 'soup'
                 ? Colors.blue.withOpacity(0.1)
                 : Colors.green.withOpacity(0.1),
             borderRadius: BorderRadius.circular(10),
           ),
           child: Center(
             child: Text(
-              recipe.category == '汤品' ? '🍲' : '🍳',
+              recipe.categoryIcon,
               style: const TextStyle(fontSize: 22),
             ),
           ),
@@ -177,7 +177,7 @@ class _SearchResultTile extends StatelessWidget {
           style: const TextStyle(fontWeight: FontWeight.w600),
         ),
         subtitle: Text(
-          '${recipe.category} · ${recipe.difficultyText} · ${recipe.cookTime}分钟',
+          '${recipe.categoryName} · ${recipe.difficultyText} · ${recipe.cookTime}分钟',
           style: TextStyle(
             fontSize: 12,
             color: theme.colorScheme.onSurfaceVariant,

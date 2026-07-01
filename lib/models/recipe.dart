@@ -11,8 +11,8 @@ class Recipe {
   final double protein;
   final double fat;
   final double carbs;
-  final List<String> tags;
-  final String category;
+  final List<String> tagIds;
+  final String categoryId;
   final List<RecipeIngredient> ingredients;
   final List<RecipeStep> steps;
 
@@ -27,8 +27,8 @@ class Recipe {
     this.protein = 0,
     this.fat = 0,
     this.carbs = 0,
-    this.tags = const [],
-    this.category = '',
+    this.tagIds = const [],
+    this.categoryId = '',
     this.ingredients = const [],
     this.steps = const [],
   });
@@ -45,11 +45,11 @@ class Recipe {
       protein: (json['protein'] as num?)?.toDouble() ?? 0,
       fat: (json['fat'] as num?)?.toDouble() ?? 0,
       carbs: (json['carbs'] as num?)?.toDouble() ?? 0,
-      tags: (json['tags'] as List<dynamic>?)
+      tagIds: (json['tags'] as List<dynamic>?)
               ?.map((e) => e.toString())
               .toList() ??
           [],
-      category: json['category'] as String? ?? '',
+      categoryId: json['category'] as String? ?? '',
       ingredients: (json['ingredients'] as List<dynamic>?)
               ?.map((e) => RecipeIngredient.fromMap(e as Map<String, dynamic>))
               .toList() ??
@@ -59,6 +59,25 @@ class Recipe {
               .toList() ??
           [],
     );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'description': description,
+      'image_url': imageUrl,
+      'difficulty': difficulty,
+      'cook_time': cookTime,
+      'calories': calories,
+      'protein': protein,
+      'fat': fat,
+      'carbs': carbs,
+      'tags': tagIds,
+      'category': categoryId,
+      'ingredients': ingredients.map((e) => e.toMap()).toList(),
+      'steps': steps.map((e) => e.toMap()).toList(),
+    };
   }
 
   Map<String, dynamic> toMap() {
@@ -73,8 +92,8 @@ class Recipe {
       'protein': protein,
       'fat': fat,
       'carbs': carbs,
-      'tags': tags.join(','),
-      'category': category,
+      'tags': tagIds.join(','),
+      'category': categoryId,
     };
   }
 
@@ -90,8 +109,8 @@ class Recipe {
       protein: (map['protein'] as num?)?.toDouble() ?? 0,
       fat: (map['fat'] as num?)?.toDouble() ?? 0,
       carbs: (map['carbs'] as num?)?.toDouble() ?? 0,
-      tags: (map['tags'] as String?)?.split(',').where((s) => s.isNotEmpty).toList() ?? [],
-      category: map['category'] as String? ?? '',
+      tagIds: (map['tags'] as String?)?.split(',').where((s) => s.isNotEmpty).toList() ?? [],
+      categoryId: map['category'] as String? ?? '',
     );
   }
 
@@ -110,6 +129,68 @@ class Recipe {
       default:
         return '简单';
     }
+  }
+
+  String get categoryName {
+    switch (categoryId) {
+      case 'meat':
+        return '肉类';
+      case 'vegetable':
+        return '蔬菜';
+      case 'seafood':
+        return '海鲜';
+      case 'egg':
+        return '蛋类';
+      case 'soup':
+        return '汤品';
+      case 'tofu':
+        return '豆制品';
+      case 'rice':
+        return '主食';
+      case 'dessert':
+        return '甜品';
+      default:
+        return categoryId;
+    }
+  }
+
+  String get categoryIcon {
+    switch (categoryId) {
+      case 'meat':
+        return '🥩';
+      case 'vegetable':
+        return '🥬';
+      case 'seafood':
+        return '🦐';
+      case 'egg':
+        return '🥚';
+      case 'soup':
+        return '🍲';
+      case 'tofu':
+        return '🧊';
+      case 'rice':
+        return '🍚';
+      case 'dessert':
+        return '🍰';
+      default:
+        return '🍳';
+    }
+  }
+
+  List<String> get tagNames {
+    final tagMap = {
+      'light': '清淡',
+      'low_fat': '低脂',
+      'high_protein': '高蛋白',
+      'quick': '快手',
+      'easy': '简单',
+      'family': '家庭',
+      'vegetarian': '素食',
+      'healthy': '健康',
+      'hot': '香辣',
+      'sweet': '甜味',
+    };
+    return tagIds.map((id) => tagMap[id] ?? id).toList();
   }
 }
 

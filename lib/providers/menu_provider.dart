@@ -84,7 +84,7 @@ class MenuProvider extends ChangeNotifier {
           maxCalories = null;
           break;
         case MenuScenario.fatLoss:
-          tags = ['清淡', '低脂', '高蛋白'];
+          tags = ['light', 'low_fat', 'high_protein'];
           maxCalories = 600;
           break;
       }

@@ -38,13 +38,13 @@ class RecipeDetailScreen extends StatelessWidget {
                     (step) => _StepTile(step: step),
                   ),
                   const SizedBox(height: 24),
-                  if (recipe.tags.isNotEmpty) ...[
+                  if (recipe.tagIds.isNotEmpty) ...[
                     _SectionTitle(title: '🏷️ 标签', subtitle: ''),
                     const SizedBox(height: 8),
                     Wrap(
                       spacing: 8,
                       runSpacing: 8,
-                      children: recipe.tags
+                      children: recipe.tagNames
                           .map(
                             (tag) => Chip(
                               label: Text(tag, style: const TextStyle(fontSize: 12)),
@@ -107,7 +107,7 @@ class _RecipeHeader extends StatelessWidget {
             ),
             child: Center(
               child: Text(
-                recipe.category == '汤品' ? '🍲' : '🍳',
+                recipe.categoryIcon,
                 style: const TextStyle(fontSize: 40),
               ),
             ),
