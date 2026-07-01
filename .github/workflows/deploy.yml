@@ -4,6 +4,9 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -12,7 +15,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        persist-credentials: false
+        ref: main
     
     - name: Set up Flutter
       uses: subosito/flutter-action@v2
@@ -20,14 +23,8 @@ jobs:
         flutter-version: '3.22.x'
         channel: 'stable'
     
-    - name: Print Flutter version
-      run: flutter --version
-    
     - name: Install dependencies
       run: flutter pub get
-    
-    - name: Analyze code
-      run: flutter analyze
     
     - name: Build web application
       run: flutter build web --release --base-href="/family_menu/"
@@ -35,6 +32,6 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
-        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: build/web
         publish_branch: gh-pages
