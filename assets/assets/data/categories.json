@@ -1,0 +1,12 @@
+[
+  {"id": "meat", "name": "肉类", "icon": "🥩", "color": "#e74c3c"},
+  {"id": "vegetable", "name": "蔬菜", "icon": "🥬", "color": "#27ae60"},
+  {"id": "seafood", "name": "海鲜", "icon": "🦐", "color": "#3498db"},
+  {"id": "egg", "name": "蛋类", "icon": "🥚", "color": "#f1c40f"},
+  {"id": "soup", "name": "汤品", "icon": "🍲", "color": "#9b59b6"},
+  {"id": "tofu", "name": "豆制品", "icon": "🧈", "color": "#e67e22"},
+  {"id": "rice", "name": "主食", "icon": "🍚", "color": "#d35400"},
+  {"id": "dessert", "name": "甜品", "icon": "🍰", "color": "#c0392b"},
+  {"id": "seasoning", "name": "调料", "icon": "🧂", "color": "#7f8c8d"},
+  {"id": "dry", "name": "干货", "icon": "🥜", "color": "#8e44ad"}
+]

@@ -1,0 +1,12 @@
+[
+  {"id": "light", "name": "清淡", "color": "#27ae60"},
+  {"id": "low_fat", "name": "低脂", "color": "#3498db"},
+  {"id": "high_protein", "name": "高蛋白", "color": "#9b59b6"},
+  {"id": "quick", "name": "快手菜", "color": "#f1c40f"},
+  {"id": "home", "name": "家常", "color": "#e67e22"},
+  {"id": "spicy", "name": "麻辣", "color": "#e74c3c"},
+  {"id": "sweet", "name": "酸甜", "color": "#c0392b"},
+  {"id": "vegetarian", "name": "素菜", "color": "#1abc9c"},
+  {"id": "steam", "name": "蒸菜", "color": "#16a085"},
+  {"id": "nourishing", "name": "滋补", "color": "#8e44ad"}
+]
