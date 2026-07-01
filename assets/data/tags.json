@@ -1,0 +1,12 @@
+[
+  {"id": "light", "name": "清淡", "color": "#27ae60", "description": "少油少盐"},
+  {"id": "low_fat", "name": "低脂", "color": "#3498db", "description": "适合减脂"},
+  {"id": "high_protein", "name": "高蛋白", "color": "#9b59b6", "description": "高蛋白含量"},
+  {"id": "quick", "name": "快手", "color": "#f39c12", "description": "15分钟搞定"},
+  {"id": "easy", "name": "简单", "color": "#1abc9c", "description": "新手友好"},
+  {"id": "family", "name": "家庭", "color": "#e74c3c", "description": "全家爱吃"},
+  {"id": "vegetarian", "name": "素食", "color": "#2ecc71", "description": "不含肉类"},
+  {"id": "healthy", "name": "健康", "color": "#16a085", "description": "营养均衡"},
+  {"id": "hot", "name": "香辣", "color": "#c0392b", "description": "辣口味"},
+  {"id": "sweet", "name": "甜味", "color": "#e91e63", "description": "甜口味"}
+]
